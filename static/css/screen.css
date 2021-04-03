@@ -91,7 +91,7 @@ body {
   height: 100%;
   max-height: 100%;
   /*font-family: 'Droid Serif', serif;*/
-  font-family: "Roboto Slab", serif;
+  font-family: "Open Sans", serif;
   font-size: 2rem;
   line-height: 1.6em;
   color: #3a4145;
@@ -180,12 +180,12 @@ a {
 }
 
 a:hover {
-  color: #86c440;
+  color: #40c4b2;
 }
 
 a.btn {
   text-decoration: none;
-  background-color: #9fd067;
+  background-color: #687486;
   border-radius: 6px;
   -webkit-border-radius: 6px;
   color: white;
@@ -198,13 +198,13 @@ a.btn {
   position: relative;
   margin-top: 2rem;
   cursor: pointer;
-  font-family: "Oswald", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   font-weight: lighter;
 }
 
 a.btn:hover {
-  background: #86c440;
+  background: #40c4b2;
 }
 
 #header-arrow {
@@ -439,7 +439,6 @@ ul li {
       3. Utilities - These things get used a lot
       ========================================================================== */
 
-/* Hides shit */
 .hidden {
   text-indent: -9999px;
   visibility: hidden;
@@ -473,7 +472,7 @@ ul li {
   margin-bottom: 0rem;
   text-align: center;
   color: #fff;
-  background: #b80135 no-repeat center center;
+  background: #01b2b8 no-repeat center center;
   background-size: cover;
 }
 
@@ -503,6 +502,7 @@ ul li {
   margin: 10px 0 10px 0;
   font-size: 5rem;
   letter-spacing: -1px;
+  text-shadow: 0 0 8px rgba(0,0,0,.3);
 }
 
 .blog-description {
@@ -510,8 +510,9 @@ ul li {
   font-size: 2.5rem;
   line-height: 1.5em;
   font-weight: 400;
-  font-family: "Roboto Slab", serif;
+  font-family: "Open Sans", serif;
   letter-spacing: 0;
+  text-shadow: 0 0 8px rgba(0,0,0,.3);
 }
 
 .post-holder {
@@ -521,7 +522,7 @@ ul li {
   position: relative;
 }
 .post-holder.odd {
-  background: #b80135;
+  background: #5895a0;
   color: white;
 }
 
@@ -548,7 +549,7 @@ ul li {
   top: 40px;
   left: 2%;
   z-index: 99999;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
   line-height: 130%;
@@ -563,10 +564,10 @@ a.fn-item {
   color: white;
 }
 a.fn-item:hover {
-  color: #9fd067;
+  color: #67aad0;
 }
 a.fn-item.active {
-  color: #86c440;
+  color: #3ec1d8;
   opacity: 1;
 }
 
@@ -587,7 +588,14 @@ a.fn-item.active {
 }
 
 .post-title {
-  margin: 0;
+  margin: 0 0 16px 0;
+  text-decoration: overline;
+  color: rgb(87, 134, 160);
+}
+
+.odd .post-title {
+  color: #f2efe8;
+  text-decoration: overline;
 }
 
 .post-title a {
@@ -933,8 +941,9 @@ a.fn-item.active {
     padding: 4px;
   }
   a.fn-item {
-    display: inline;
-    margin-left: 10px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   blockquote {
     margin-left: 0;
@@ -1105,7 +1114,3 @@ a.fn-item.active {
   }
 }
 
-/* ==========================================================================
-      End of file. Media queries should be the last thing here. Do not add stuff
-      below this point, or it will probably fuck everything up.
-      ========================================================================== */
