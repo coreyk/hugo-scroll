@@ -4,7 +4,7 @@
       <section class="copyright">© {{ now.Year }} {{ . | markdownify }}</section>{{ end }}
 
 
-    <section>{{ echoParam .Site.Params "hidebyline" }}</section>
+    <section>{{ index .Site.Params "hidebyline" }}</section>
 
   </div>
 </footer>
